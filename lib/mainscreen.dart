@@ -15,7 +15,7 @@ class _MainScreenState extends State<MainScreen> {
 
   TextEditingController nameController = TextEditingController();
   TextEditingController phonenumberController = TextEditingController();
-  TextEditingController schoolController = TextEditingController();
+  TextEditingController addressController = TextEditingController();
   TextEditingController IINController = TextEditingController();
 
   @override
@@ -39,7 +39,7 @@ class _MainScreenState extends State<MainScreen> {
     final newStudent = {
       'name': nameController.text.trim(),
       'phoneNumber': phonenumberController.text.trim(),
-      'school': schoolController.text.trim(),
+      'address': addressController.text.trim(),
       'IIN': IINController.text.trim(),
     };
 
@@ -67,8 +67,8 @@ class _MainScreenState extends State<MainScreen> {
                 decoration: const InputDecoration(labelText: 'Телефон'),
               ),
               TextFormField(
-                controller: schoolController,
-                decoration: const InputDecoration(labelText: 'Школа'),
+                controller: addressController,
+                decoration: const InputDecoration(labelText: 'Адрес'),
               ),
               TextFormField(
                 controller: IINController,
@@ -79,7 +79,7 @@ class _MainScreenState extends State<MainScreen> {
                   final feedback = {
                     SheetsColumn.name: nameController.text.trim(),
                     SheetsColumn.phonenumber: phonenumberController.text.trim(),
-                    SheetsColumn.school: schoolController.text.trim(),
+                    SheetsColumn.address: addressController.text.trim(),
                     SheetsColumn.IIN: IINController.text.trim(),
                   };
 

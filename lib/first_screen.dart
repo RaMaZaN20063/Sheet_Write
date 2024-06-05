@@ -87,7 +87,7 @@ class _FirstScreenState extends State<FirstScreen> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text('Телефон: ${data['phoneNumber']}'),
-                          Text('Школа: ${data['school']}'),
+                          Text('Адрес: ${data['address']}'),
                           Text('ИИН: ${data['IIN']}'),
                         ],
                       ),
